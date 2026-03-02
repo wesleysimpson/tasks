@@ -1,5 +1,11 @@
 import React from "react";
 import "./App.css";
+
+import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+
 import { ChangeType } from "./components/ChangeType";
 import { RevealAnswer } from "./components/RevealAnswer";
 import { StartAttempt } from "./components/StartAttempt";
@@ -53,18 +59,19 @@ function App(): React.JSX.Element {
                     </Row>
                 </Container>
             </header>
-            <hr></hr>
-            <Counter></Counter>
+
             <hr />
-            <RevealAnswer></RevealAnswer>
+            <Counter />
             <hr />
-            <StartAttempt></StartAttempt>
+            <RevealAnswer />
             <hr />
-            <TwoDice></TwoDice>
+            <StartAttempt />
             <hr />
-            <ChangeType></ChangeType>
+            <TwoDice />
             <hr />
-            <CycleHoliday></CycleHoliday>
+            <ChangeType />
+            <hr />
+            <CycleHoliday />
         </div>
     );
 }
